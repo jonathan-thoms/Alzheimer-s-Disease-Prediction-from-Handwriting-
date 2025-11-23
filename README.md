@@ -47,3 +47,33 @@ Run the training pipeline. This will preprocess data, train the network, and sav
 
 ```bash
 python train.py
+```
+### 2. Running Predictions
+To test the model on new data:
+
+```Bash
+
+python predict.py
+```
+📊 Model Architecture
+```Python
+
+Sequential(
+  (0): Dense(256, activation='relu')
+  (1): Dropout(0.3)
+  (2): Dense(128, activation='relu')
+  (3): Dropout(0.3)
+  (4): Dense(64, activation='relu')
+  (5): Dense(1, activation='sigmoid')
+)
+```
+### 📈 Results
+* Test Accuracy: ~88% (Varies based on random seed)
+
+* Optimizer: Adam
+
+* Loss Function: Binary Cross-Entropy
+
+### 🤝 Contributing
+Contributions are welcome. Please open an issue to discuss proposed changes.
+
